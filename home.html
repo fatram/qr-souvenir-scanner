@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Souvenir Scanner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Souvenir System</h1>
+            <div id="connection-status" class="status-pending">Connecting...</div>
+        </header>
+
+        <div id="reader"></div>
+
+        <section class="history-container">
+            <h3>Recent Scans</h3>
+            <div id="history-list">
+                <p class="empty-msg">No scans yet this session.</p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0; padding: 15px;
+    display: flex; justify-content: center;
+}
+
+.container {
+    width: 100%; max-width: 450px;
+    background: white; padding: 20px;
+    border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+#reader {
+    width: 100%; border-radius: 15px;
+    overflow: hidden; margin-bottom: 20px;
+}
+
+/* Status Indicator */
+#connection-status {
+    font-size: 0.8rem; font-weight: bold; padding: 4px 12px;
+    border-radius: 20px; display: inline-block; margin-bottom: 15px;
+}
+.status-online { background: #e6fffa; color: #38b2ac; }
+.status-pending { background: #fffaf0; color: #dd6b20; }
+
+/* History List */
+.history-container {
+    text-align: left; border-top: 1px solid #eee; padding-top: 15px;
+}
+
+.history-item {
+    background: #f8fafc; padding: 12px;
+    border-radius: 10px; margin-bottom: 8px;
+    border-left: 4px solid #4a90e2;
+    animation: slideIn 0.3s ease-out;
+}
+
+.history-item span { display: block; font-size: 0.9rem; }
+.history-name { font-weight: bold; color: #2d3748; }
+.history-time { font-size: 0.7rem !important; color: #a0aec0; }
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.manual-controls {
+    margin: 15px 0;
+}
+
+.btn-manual {
+    width: 100%;
+    padding: 12px;
+    background: #edf2f7;
+    border: 1px solid #cbd5e0;
+    border-radius: 10px;
+    color: #4a5568;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-manual:active {
+    background: #e2e8f0;
+}
